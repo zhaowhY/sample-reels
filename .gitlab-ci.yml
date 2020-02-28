@@ -1,0 +1,76 @@
+variables:
+  SOURCE: dist
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+  - node_modules
+
+before_script:
+  - export SOURCE=$SOURCE
+  - export TARGET=$TARGET
+
+build:
+  stage: build
+  script:
+    - npm i
+    - npm run build:test
+  artifacts:
+    name: vue-eslint-airbnb."$CI_BUILD_REF"
+    paths:
+      - dist
+    expire_in: 1 day
+  except:
+    - master
+  tags:
+    - node-8-10
+
+build_prod:
+  stage: build
+  script:
+    - npm i
+    - npm run build
+  artifacts:
+    name: vue-eslint-airbnb."$CI_BUILD_REF"
+    paths:
+      - dist
+    expire_in: 1 day
+  only:
+    - master
+  tags:
+    - node-8-10
+
+deploy_integration:
+  stage: deploy
+  script:
+    - export SERVER=$SERVER_integration
+    - bash /deploy.sh
+  only:
+    - vue/cli
+    # - integration
+  tags:
+    - ssh-deploy
+
+# deploy_staging:
+#   stage: deploy
+#   script:
+#     - export SERVER=$SERVER_staging
+#     - sh /deploy.sh
+#   only:
+#     - master
+#   tags:
+#     - ssh-deploy
+
+# deploy_prod:
+#   stage: deploy
+#   script:
+#     - export SERVER=$SERVER_production
+#     - sh /deploy.sh
+#   when: manual
+#   only:
+#     - master
+#   tags:
+#     - ssh-deploy

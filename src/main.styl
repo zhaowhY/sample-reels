@@ -1,0 +1,74 @@
+@import './variable'
+
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: Helvetica, Arial, sans-serif;
+  background: #fff;
+  text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.btn
+  font-size 16px
+  display inline-block
+  margin 0 8px
+  font-weight:600;
+  color:rgba(255,255,255,0.78);
+  text-align center
+  line-height 32px
+  height 32px
+  width 200px
+  cursor pointer
+  bg-linear(rgba(45,100,255, .54), rgba(133,75,255, .54))
+  border-linear(rgba(26,123,197,1), rgba(136,85,244,1))
+  &:hover
+    bg-linear(rgba(45,100,255, .8), rgba(133,75,255, .8))
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+
+#nav {
+  padding: 32px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
