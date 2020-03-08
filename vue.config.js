@@ -13,6 +13,7 @@ module.exports = {
   // 修改为相对路径
   // publicPath: `.${BASE_URL}`, // npm run build 使用
   publicPath: BASE_URL, // git push origin integration 使用
+  outputDir: 'docs',
   devServer: {
     overlay: {
       warnings: true,

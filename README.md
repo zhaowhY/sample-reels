@@ -1,14 +1,14 @@
 # 作品集-demo
 
 ## Demos
-- 元素3D动画旋转[]
+- [元素3D动画旋转](https://kongkong99.github.io/sample-reels/3d-rotate) 代码路径: src/views/3D-rotateDemo
 
 
-## 项目脚手架
+### 项目脚手架
 
 - npm包地址: [jdc-webcli](https://www.npmjs.com/package/jdc-webcli)
 
-## build step
+### build step
 
 ``` bash
 # install dependencies
