@@ -1,0 +1,102 @@
+$sum = 7;
+$unit = (360 / $sum);
+
+.wrapper {
+  width: 1920px;
+  height: 100%;
+  background-image: url('../../assets/image_background@2x.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.milkywayImg {
+  width: 1050px;
+  height: 430px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 268px;
+  margin: 0 auto;
+}
+
+.globelGif {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 100px;
+  width: 900px;
+}
+
+.zoetrope-wrapper {
+  perspective: 800px;
+  perspective-origin: 50% -50%;
+}
+
+.zoetrope {
+  margin: 211px auto;
+  position: relative;
+  height: 300px;
+  transform-style: preserve-3d;
+  // border: 1px solid red;
+}
+
+.zoetrope div {
+  position: absolute;
+  width: 129px;
+  height: 155px;
+  left: calc(50% - 65px);
+  transform-origin: 50% 0;
+  background-image: url('../../assets/single.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.item-title {
+  width: 90px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  line-height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.zoetrope:hover {
+  animation-play-state: paused;
+}
+
+for i in 1..$sum {
+  .zoetrope div:nth-child({i}) {
+    transform: rotateY($unit * (i - 1) deg) translateZ(440px);
+  }
+}
+
+.rotateInit {
+  animation: zoetrope 4000s linear infinite;
+}
+
+for i in 1..$sum
+  .rotate{i}
+    animation: rotate + i forwards;
+
+@keyframes zoetrope {
+  100% {
+    transform: rotateY(36000deg);
+  }
+}
+
+for i in 1..$sum
+  @keyframes rotate{i} {
+    100% {
+      transform: rotateY($unit * ($sum + 1 - i) deg);
+    }
+  }

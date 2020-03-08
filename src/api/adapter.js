@@ -6,20 +6,18 @@
 import axios from 'axios';
 import { domains } from '@/config';
 
-const getInstance = (baseURL) => {
-  const instance = axios.create({
-    baseURL,
-    timeout: 30000,
-    withCredentials: true,
-  });
-  instance.interceptors.response.use((response = {}) => {
-    const { data: { code, data } } = response;
-    if (code === 200) {
-      return data;
-    }
-    return Promise.reject(response.data);
-  }, error => Promise.reject(error));
-  return instance;
-};
+const icity = axios.create({
+  baseURL: domains.icity,
+  timeout: 3000,
+  // `transformResponse` allows changes to the response data to be made before
+  // it is passed to then/catch
+  // transformResponse: [function (data) {
+  //   return data
+  // }],
+});
+icity.interceptors.response.use(
+  response => response.data,
+  error => Promise.reject(error)
+);
 
-export const demo = getInstance(domains.demo);
+export { icity };
