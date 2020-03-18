@@ -24,10 +24,12 @@
     "@vue/cli-service": "^3.0.0-rc.3",
     "@vue/eslint-config-airbnb": "^3.0.1",
     "babel-plugin-component": "^1.1.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
     "postcss-px2rem": "^0.3.0",
     "px2rem-webpack-plugin": "^0.2.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.16"
   },
   "browserslist": [

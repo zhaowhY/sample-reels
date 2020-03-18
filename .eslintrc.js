@@ -11,6 +11,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prefer-default-export': 'off',
+    'arrow-parens': ["error", "as-needed"],
+    'no-mixed-operators': "off",
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
     'no-param-reassign': ['error', { props: false }],

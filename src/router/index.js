@@ -13,6 +13,11 @@ export default new Router({
       path: '/3d-rotate',
       name: '3D-rotate',
       component: () => import('../views/3D-rotateDemo/index.vue')
+    },
+    {
+      path: '/3d-wordCloud',
+      name: '3D-wordCloud',
+      component: () => import('../views/3D-wordCloud/index.vue')
     }
   ]
 });
