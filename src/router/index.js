@@ -18,6 +18,11 @@ export default new Router({
       path: '/3d-wordCloud',
       name: '3D-wordCloud',
       component: () => import('../views/3D-wordCloud/index.vue')
+    },
+    {
+      path: '/grayscale',
+      name: 'grayscale',
+      component: () => import('../views/grayscale/index.vue')
     }
   ]
 });
