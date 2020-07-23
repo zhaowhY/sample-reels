@@ -5,7 +5,7 @@
  */
 class Logger {
   constructor(debug) {
-    ['info', 'warn'].forEach((key) => {
+    ['info', 'warn'].forEach(key => {
       this[key] = (...args) => (debug ? console[key](...args) : '');
     });
     this.error = console.error;

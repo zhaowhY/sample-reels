@@ -10,6 +10,11 @@ export default new Router({
       redirect: '/3d-rotate'
     },
     {
+      path: '/2d-round',
+      name: '2d-round',
+      component: () => import('../views/2D-round/Index.vue')
+    },
+    {
       path: '/3d-rotate',
       name: '3D-rotate',
       component: () => import('../views/3D-rotateDemo/index.vue')
