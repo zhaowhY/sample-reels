@@ -1,3 +1,3 @@
-import { icity } from './adapter';
+import { instance } from './adapter';
 
-export const getPing = async () => await icity.get('./ping');
+export const getPing = async () => await instance.get('./ping');
