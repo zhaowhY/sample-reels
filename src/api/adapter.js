@@ -6,8 +6,8 @@
 import axios from 'axios';
 import { domains } from '@/config';
 
-const icity = axios.create({
-  baseURL: domains.icity,
+const instance = axios.create({
+  baseURL: domains.baseUrl,
   timeout: 3000,
   // `transformResponse` allows changes to the response data to be made before
   // it is passed to then/catch
@@ -15,9 +15,9 @@ const icity = axios.create({
   //   return data
   // }],
 });
-icity.interceptors.response.use(
+instance.interceptors.response.use(
   response => response.data,
   error => Promise.reject(error)
 );
 
-export { icity };
+export { instance };
