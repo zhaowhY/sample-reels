@@ -5,6 +5,7 @@
 - [3D-球体词云](https://kongkong99.github.io/sample-reels/#/3d-wordCloud) 代码路径: src/views/3D-wordCloud
 - [地理坐标在线转化工具](https://kongkong99.github.io/coordinate)
 - [网站grayscale](https://kongkong99.github.io/sample-reels/#/grayscale) 代码路径: src/views/grayscale
+- [滑块验证码](https://kongkong99.github.io/jigsaw)
 
 ### 特殊demo注释
 - grayscale
