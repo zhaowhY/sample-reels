@@ -4,9 +4,9 @@
 - [2D-圆周运动](https://kongkong99.github.io/sample-reels/#/2d-round) 代码路径: src/views/2D-round
 - [3D-旋转动画](https://kongkong99.github.io/sample-reels/#/3d-rotate) 代码路径: src/views/3D-rotateDemo
 - [3D-球体词云](https://kongkong99.github.io/sample-reels/#/3d-wordCloud) 代码路径: src/views/3D-wordCloud
-- [地理坐标在线转化工具](https://kongkong99.github.io/coordinate)
+- [地理坐标在线转化工具](https://kongkong99.github.io/coordinate) [仓库地址](https://github.com/kongkong99/coordinate)
 - [网站grayscale](https://kongkong99.github.io/sample-reels/#/grayscale) 代码路径: src/views/grayscale
-- [滑块验证码](https://kongkong99.github.io/jigsaw)
+- [滑块验证码](https://kongkong99.github.io/jigsaw) [仓库地址](https://github.com/kongkong99/jigsaw)
 
 ### 特殊demo注释
 - grayscale
