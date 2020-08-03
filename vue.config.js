@@ -16,7 +16,7 @@ module.exports = {
   outputDir: 'docs',
   devServer: {
     overlay: {
-      warnings: true,
+      warnings: false,
       errors: true
     },
     port: 8080

@@ -1,16 +1,23 @@
 <template>
   <div class="round">
-    <img src="@/assets/圆周运动相关知识.png" alt="" :style="{width: '800px'}">
+    <img
+      src="@/assets/圆周运动相关知识.png"
+      alt=""
+      :style="{width: '800px'}"
+    >
     <div class="round_wrapper">
       <div
         class="round__circle"
         :style="{transform: `translate(${x}px, ${y}px)`}"
       ></div>
     </div>
+    <div id="container"></div>
   </div>
 </template>
 
 <script>
+import jigsaw from 'jigsaw-captcha-js';
+
 const RDDIUS = 175;
 let animationNum = 0;
 export default {
@@ -20,6 +27,16 @@ export default {
   }),
   mounted() {
     this.initAnimation();
+
+    jigsaw.init({
+      el: document.getElementById('container'),
+      imgs: [], // 可选，默认为一张内置图片
+      width: 310, // 可选, 默认310
+      height: 155, // 可选, 默认155
+      onSuccess() { console.log('success'); },
+      onFail() { console.log('fail'); },
+      onRefresh() { console.log('refresh'); }
+    });
   },
   methods: {
     // 圆周运动

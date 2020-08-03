@@ -7,6 +7,7 @@
 - [地理坐标在线转化工具](https://kongkong99.github.io/coordinate) [仓库地址](https://github.com/kongkong99/coordinate)
 - [网站grayscale](https://kongkong99.github.io/sample-reels/#/grayscale) 代码路径: src/views/grayscale
 - [滑块验证码](https://kongkong99.github.io/jigsaw) [仓库地址](https://github.com/kongkong99/jigsaw)
+- [Leaflet加载其他地图底图](https://kongkong99.github.io/leafletMap) 代码路径: src/views/leafletMap
 
 ### 特殊demo注释
 - grayscale
