@@ -40,14 +40,14 @@ export default {
         Annotion: 'TianDiTu.Satellite.Annotion',
       },
       {
-        title: '天地图-地势图',
+        title: '天地图-地形图',
         id: 'Leaflet-Terrain',
         map: 'TianDiTu.Terrain.Map',
         Annotion: 'TianDiTu.Terrain.Annotion',
       },
       {
         title: '百度-标准图',
-        id: 'ddddd',
+        id: 'Baidu-Normal',
         map: 'Baidu.Normal.Map',
         Annotion: '',
         crs: 'Baidu'
@@ -86,7 +86,7 @@ export default {
         return;
       }
 
-      map && L.tileLayer.chinaProvider('Baidu.Normal.Map').addTo(mapElement);
+      map && L.tileLayer.chinaProvider(map).addTo(mapElement);
       Annotion && L.tileLayer.chinaProvider(Annotion).addTo(mapElement);
     });
   }
