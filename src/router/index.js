@@ -28,6 +28,11 @@ export default new Router({
       path: '/grayscale',
       name: 'grayscale',
       component: () => import('../views/grayscale/index.vue')
+    },
+    {
+      path: '/watermark',
+      name: 'watermark',
+      component: () => import('../views/WaterMark/index.vue')
     }
   ]
 });
