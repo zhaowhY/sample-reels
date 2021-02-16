@@ -1,6 +1,29 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div
+    id="app"
+    class="app-wrapper"
+  >
+
+    <Menus class="app-menus" />
+    <router-view />
   </div>
 </template>
-<style lang="styl" src='./main.styl'></style>
+
+<script>
+import Menus from '@/components/Menus/index.vue';
+
+export default {
+  data: () => ({}),
+  components: { Menus },
+};
+</script>
+
+<style lang="less" scoped>
+.app-wrapper {
+  display: flex;
+
+  .app-menus {
+    width: 220px;
+  }
+}
+</style>

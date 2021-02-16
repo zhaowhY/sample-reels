@@ -1,8 +1,9 @@
 import Vue from 'vue';
+import '@/styles/reset.css';
 import Logger from '@/plugins/logger';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { setRemInit } from '@/directives/rem';
+// import { setRemInit } from '@/directives/rem';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -13,7 +14,7 @@ Vue.use(ElementUI);
 Vue.config.productionTip = false;
 
 Vue.$log.info('vue-eslint launch...');
-setRemInit();
+// setRemInit();
 
 new Vue({
   router,

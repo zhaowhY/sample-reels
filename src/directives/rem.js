@@ -8,8 +8,8 @@ export function setRemInit() {
     const scale = document.documentElement.clientWidth / 1920;
     // 设置页面根节点字体大小
     document.documentElement.style.fontSize = `${baseSize * scale}px`;
-    if (Number(document.documentElement.style.fontSize.slice(0, -2)) <= 130) {
-      document.documentElement.style.fontSize = '130px';
+    if (Number(document.documentElement.style.fontSize.slice(0, -2)) <= 1280) {
+      document.documentElement.style.fontSize = '128px';
     }
   }
   // 初始化
