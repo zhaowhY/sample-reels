@@ -5,13 +5,13 @@
   >
     <h1 style="color: #67C23A;margin: 16px">Vue项目</h1>
     <el-button
-      style="margin: 8px"
+      style="margin: 8px 16px"
       type="primary"
       size="mini"
       @click="visible = false"
     >隐藏左侧导航栏</el-button>
     <el-menu
-      default-active="/3d-wordCloud"
+      :default-active="$route.path"
       @select="selectMenu"
     >
       <el-menu-item
@@ -44,7 +44,7 @@ export default {
   data: () => ({
     menuRoute,
     externalLinks,
-    visible: true
+    visible: true,
   }),
   methods: {
     selectMenu(path) {

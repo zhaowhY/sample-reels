@@ -6,7 +6,7 @@ Vue.use(Router);
 const routes = [
   {
     path: '/',
-    redirect: '/3d-rotate'
+    redirect: '/3d-wordCloud'
   },
   {
     path: '/3d-wordCloud',
@@ -58,7 +58,7 @@ export const externalLinks = [
     name: 'Leaflet加载各类地图'
   },
   {
-    path: 'https://github.com/kongkong99/vue-tinymce',
+    path: 'https://kongkong99.github.io/vue-tinymce/',
     name: '富文本编辑器'
   }
 ];
