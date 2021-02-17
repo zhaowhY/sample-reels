@@ -9,9 +9,9 @@ const routes = [
     redirect: '/3d-rotate'
   },
   {
-    path: '/2d-round',
-    name: '2d-圆周运动',
-    component: () => import('../views/2D-round/Index.vue')
+    path: '/3d-wordCloud',
+    name: '3D-词云',
+    component: () => import('../views/3D-wordCloud/index.vue')
   },
   {
     path: '/3d-rotate',
@@ -19,9 +19,9 @@ const routes = [
     component: () => import('../views/3D-rotateDemo/index.vue')
   },
   {
-    path: '/3d-wordCloud',
-    name: '3D-词云',
-    component: () => import('../views/3D-wordCloud/index.vue')
+    path: '/2d-round',
+    name: '2d-圆周运动',
+    component: () => import('../views/2D-round/Index.vue')
   },
   {
     path: '/grayscale',
@@ -58,35 +58,7 @@ export const externalLinks = [
     name: 'Leaflet加载各类地图'
   },
   {
-    path: 'https://kongkong99.github.io/coordinate',
-    name: '地理坐标在线转化工具'
-  },
-  {
-    path: 'https://kongkong99.github.io/leafletMap/#/',
-    name: 'Leaflet加载各类地图'
-  },
-  {
-    path: 'https://kongkong99.github.io/coordinate',
-    name: '地理坐标在线转化工具'
-  },
-  {
-    path: 'https://kongkong99.github.io/leafletMap/#/',
-    name: 'Leaflet加载各类地图'
-  },
-  {
-    path: 'https://kongkong99.github.io/coordinate',
-    name: '地理坐标在线转化工具'
-  },
-  {
-    path: 'https://kongkong99.github.io/leafletMap/#/',
-    name: 'Leaflet加载各类地图'
-  },
-  {
-    path: 'https://kongkong99.github.io/coordinate',
-    name: '地理坐标在线转化工具'
-  },
-  {
-    path: 'https://kongkong99.github.io/leafletMap/#/',
-    name: 'Leaflet加载各类地图'
+    path: 'https://github.com/kongkong99/vue-tinymce',
+    name: '富文本编辑器'
   }
 ];
