@@ -3,9 +3,8 @@
     id="app"
     class="app-wrapper"
   >
-
     <Menus class="app-menus" />
-    <router-view />
+    <router-view class="app-view" />
   </div>
 </template>
 
@@ -24,6 +23,10 @@ export default {
 
   .app-menus {
     width: 220px;
+  }
+
+  .app-view {
+    margin: 0 auto;
   }
 }
 </style>

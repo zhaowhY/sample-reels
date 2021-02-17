@@ -130,23 +130,22 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
-
 .wrapper {
   display: flex;
   margin-top: 24px;
-  justify-content: center;
+  width: 1000px;
+  justify-content: space-between;
   padding: 0 24px;
 }
 
 .section-demo {
-  flex: 1 0 40%;
+  flex: 1 0 45%;
   text-align: center;
 }
 
 
 .section-dynamic {
-  flex: 1 0 60%;
+  flex: 1 0 55%;
 }
 
 h1 {

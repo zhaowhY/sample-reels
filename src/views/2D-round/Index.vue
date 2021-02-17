@@ -18,30 +18,33 @@
 
 const RDDIUS = 175;
 let animationNum = 0;
+
 export default {
   data: () => ({
     x: 0,
-    y: 0
+    y: 0,
+    timer: null
   }),
   mounted() {
-    this.initAnimation();
+    // 圆周运动
+    this.timer = setInterval(() => {
+      const x = Math.sin((animationNum * Math.PI) / 180) * RDDIUS;
+      const y = Math.cos((animationNum * Math.PI) / 180) * RDDIUS;
+      this.x = x;
+      this.y = y;
+      animationNum += 1;
+    }, 20);
+  },
+  beforeDestroy() {
+    if (this.timer) clearTimeout(this.timer);
   },
   methods: {
-    // 圆周运动
-    initAnimation() {
-      setInterval(() => {
-        const x = Math.sin((animationNum * Math.PI) / 180) * RDDIUS;
-        const y = Math.cos((animationNum * Math.PI) / 180) * RDDIUS;
-        this.x = x;
-        this.y = y;
-        animationNum += 1;
-      }, 20);
-    }
+
   }
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="less" scoped>
 .round {
   display: flex;
   height: 90%;

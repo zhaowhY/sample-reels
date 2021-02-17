@@ -1,7 +1,15 @@
 <template>
   <div class="wrapper">
-    <img :src="milkywayImg" alt class="milkywayImg">
-    <img :src="globeGif" alt class="globelGif">
+    <img
+      :src="milkywayImg"
+      alt
+      class="milkywayImg"
+    >
+    <img
+      :src="globeGif"
+      alt
+      class="globelGif"
+    >
     <div class="zoetrope-wrapper">
       <div
         :class="['zoetrope',rotateName]"
@@ -68,7 +76,7 @@ export default {
       const unitSum = 7;
       const unit = 360 / unitSum;
       if (this.isRotate) {
-        this.rotateName = `rotate${index + 1}`;
+        // this.rotateName = `rotate${index + 1}`;
         this.$refs.zoetrope.style.transform = `rotateY(${unit *
           (unitSum - index)}deg)`;
         this.isRotate = false;
@@ -98,5 +106,5 @@ export default {
 </script>
 
 
-<style lang="stylus" scoped src="./index.styl">
+<style lang="less" scoped src="./index.less">
 </style>

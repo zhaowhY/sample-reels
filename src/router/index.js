@@ -46,3 +46,47 @@ export const menuRoute = routes.filter(route => route.name && route.path && rout
 export default new Router({
   routes
 });
+
+
+export const externalLinks = [
+  {
+    path: 'https://kongkong99.github.io/coordinate',
+    name: '地理坐标在线转化工具'
+  },
+  {
+    path: 'https://kongkong99.github.io/leafletMap/#/',
+    name: 'Leaflet加载各类地图'
+  },
+  {
+    path: 'https://kongkong99.github.io/coordinate',
+    name: '地理坐标在线转化工具'
+  },
+  {
+    path: 'https://kongkong99.github.io/leafletMap/#/',
+    name: 'Leaflet加载各类地图'
+  },
+  {
+    path: 'https://kongkong99.github.io/coordinate',
+    name: '地理坐标在线转化工具'
+  },
+  {
+    path: 'https://kongkong99.github.io/leafletMap/#/',
+    name: 'Leaflet加载各类地图'
+  },
+  {
+    path: 'https://kongkong99.github.io/coordinate',
+    name: '地理坐标在线转化工具'
+  },
+  {
+    path: 'https://kongkong99.github.io/leafletMap/#/',
+    name: 'Leaflet加载各类地图'
+  },
+  {
+    path: 'https://kongkong99.github.io/coordinate',
+    name: '地理坐标在线转化工具'
+  },
+  {
+    path: 'https://kongkong99.github.io/leafletMap/#/',
+    name: 'Leaflet加载各类地图'
+  }
+];

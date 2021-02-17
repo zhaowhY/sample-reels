@@ -3,11 +3,11 @@ const {
   VUE_CLI_SERVICE: { mode }
 } = process;
 // eslint-disable-next-line import/no-extraneous-dependencies
-const px2rem = require('postcss-px2rem');
+// const px2rem = require('postcss-px2rem');
 
-const postcss = px2rem({
-  remUnit: 192 // 基准大小 baseSize，需要和rem.js中相同
-});
+// const postcss = px2rem({
+//   remUnit: 192 // 基准大小 baseSize，需要和rem.js中相同
+// });
 
 module.exports = {
   // 修改为相对路径
@@ -25,7 +25,7 @@ module.exports = {
   css: {
     loaderOptions: {
       postcss: {
-        plugins: [postcss]
+        // plugins: [postcss]
       }
     }
   }

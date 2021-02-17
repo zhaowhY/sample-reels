@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <div
@@ -13,18 +14,37 @@
     </div>
 
     <div class="wordCloud__home">
-      <el-button type="danger" @click="handleSpeed('slow')">降低速度</el-button>
-      <el-button type="primary" @click="handleRotate('-1')">横向顺时针</el-button>
-      <el-button type="primary" @click="handleRotate('1')">横向逆时针</el-button>
-      <el-button type="primary" @click="handleRotate('-2')">纵向顺时针</el-button>
-      <el-button type="primary" @click="handleRotate('2')">纵向逆时针</el-button>
-      <el-button type="danger" @click="handleSpeed('fast')">增加速度</el-button>
+      <el-button
+        type="danger"
+        @click="handleSpeed('slow')"
+      >降低速度</el-button>
+      <el-button
+        type="primary"
+        @click="handleRotate('-1')"
+      >横向顺时针</el-button>
+      <el-button
+        type="primary"
+        @click="handleRotate('1')"
+      >横向逆时针</el-button>
+      <el-button
+        type="primary"
+        @click="handleRotate('-2')"
+      >纵向顺时针</el-button>
+      <el-button
+        type="primary"
+        @click="handleRotate('2')"
+      >纵向逆时针</el-button>
+      <el-button
+        type="danger"
+        @click="handleSpeed('fast')"
+      >增加速度</el-button>
     </div>
   </div>
 </template>
 
 
 <script>
+/* eslint-disable no-mixed-operators */
 export default {
   name: '',
   data: () => ({
@@ -86,7 +106,7 @@ export default {
       const cos = Math.cos(angleX);
       const sin = Math.sin(angleX);
 
-      this.contentEle = this.contentEle.map(t => {
+      this.contentEle = this.contentEle.map((t) => {
         const y1 = t.y * cos - t.z * sin;
         const z1 = t.z * cos + t.y * sin;
         return {
@@ -102,7 +122,7 @@ export default {
         : Math.PI / (Number(this.direction) * Number(this.speed));
       const cos = Math.cos(angleY);
       const sin = Math.sin(angleY);
-      this.contentEle = this.contentEle.map(t => {
+      this.contentEle = this.contentEle.map((t) => {
         const x1 = t.x * cos - t.z * sin;
         const z1 = t.z * cos + t.x * sin;
         return {
@@ -115,7 +135,7 @@ export default {
     move() {
       const CX = this.width / 2;
       const CY = this.height / 2;
-      this.contentEle = this.contentEle.map(singleEle => {
+      this.contentEle = this.contentEle.map((singleEle) => {
         const { x, y, z } = singleEle;
         const fallLength = 500;
         const RADIUS = (this.width - 50) / 2;

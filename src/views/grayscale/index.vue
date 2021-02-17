@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <img alt="Vue logo" src="@/assets/vueLogo.png">
+    <img
+      alt="Vue logo"
+      src="@/assets/vueLogo.png"
+    >
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,
@@ -31,10 +34,18 @@
     <h3>Essential Links</h3>
     <ul>
       <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
+        <a
+          href="https://vuejs.org"
+          target="_blank"
+          rel="noopener"
+        >Core Docs</a>
       </li>
       <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a>
+        <a
+          href="https://forum.vuejs.org"
+          target="_blank"
+          rel="noopener"
+        >Forum</a>
       </li>
       <li>
         <a
@@ -51,7 +62,11 @@
         >Twitter</a>
       </li>
       <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
+        <a
+          href="https://news.vuejs.org"
+          target="_blank"
+          rel="noopener"
+        >News</a>
       </li>
     </ul>
     <h3>Ecosystem</h3>
@@ -64,7 +79,11 @@
         >vue-router</a>
       </li>
       <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
+        <a
+          href="https://vuex.vuejs.org"
+          target="_blank"
+          rel="noopener"
+        >vuex</a>
       </li>
       <li>
         <a
@@ -89,8 +108,14 @@
       </li>
     </ul>
 
-    <el-button type="primary" @click="toggle('normal')">正常色</el-button>
-    <el-button type="info" @click="toggle('gray')">灰色</el-button>
+    <el-button
+      type="primary"
+      @click="toggle('normal')"
+    >正常色</el-button>
+    <el-button
+      type="info"
+      @click="toggle('gray')"
+    >灰色</el-button>
   </div>
 </template>
 
@@ -112,6 +137,9 @@ export default {
       ],
       true
     );
+  },
+  beforeDestroy() {
+    this.toggle('normal');
   },
   methods: {
     toggle(theme) {
@@ -138,7 +166,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="less" >
 .hello {
   margin-top: 90px;
   text-align: center;
