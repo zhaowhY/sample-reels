@@ -7,10 +7,11 @@
     <el-button
       style="margin: 8px"
       type="primary"
+      size="mini"
       @click="visible = false"
     >隐藏左侧导航栏</el-button>
     <el-menu
-      default-active="/3d-rotate"
+      default-active="/3d-wordCloud"
       @select="selectMenu"
     >
       <el-menu-item
@@ -26,8 +27,8 @@
     <el-menu @select="skipToLink">
       <el-menu-item
         :index="route.path"
-        v-for="route of externalLinks"
-        :key="route.path"
+        v-for="(route,index) of externalLinks"
+        :key="index"
       >
         <span slot="title">{{route.name}}</span>
       </el-menu-item>
@@ -61,4 +62,31 @@ export default {
   max-height: 100vh;
   overflow: auto;
 }
+</style>
+
+<style lang="less">
+.menu-wrapper {
+      /*定义滚动条高宽及背景
+    高宽分别对应横竖滚动条的尺寸*/
+    &::-webkit-scrollbar
+    {
+      width:5px;
+      background: hsla(0,0%,59.2%,.23);
+      box-sizing: border-box;
+    }
+    /*定义滚动条轨道
+    内阴影+圆角*/
+    &::-webkit-scrollbar-track
+    {
+      background: #fff;
+    }
+    /*定义滑块
+    内阴影+圆角*/
+    &::-webkit-scrollbar-thumb
+    {
+      border-radius: 30px;
+      background-color:rgba(144,147,153,.3);
+    }
+}
+
 </style>
