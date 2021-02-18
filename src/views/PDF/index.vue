@@ -1,13 +1,24 @@
 <template>
   <div>
-    <el-button @click="currentPage--">前进</el-button>
-    <el-button @click="currentPage++">后退</el-button>
-    {{currentPage}} / {{pageNums}}
+    <div class="header">
+      <div style="margin-bottom: 16px;">
+        <el-button
+          @click="changePage('prev')"
+          type="primary"
+        > <i class="el-icon-back"></i> 前进</el-button>
+        <el-button
+          @click="changePage('next')"
+          type="primary"
+        >后退 <i class="el-icon-right"></i> </el-button>
+      </div>
+      <div style="font-size: 17px; font-weight: bold">{{currentPage}} / {{pageNums}}</div>
+    </div>
     <pdf
-      src="./files/test/pdf"
+      :src="`${publicPath}files/test.pdf`"
       :page="currentPage"
       @num-pages="computePages"
     ></pdf>
+
   </div>
 </template>
 
@@ -17,7 +28,8 @@ import pdf from 'vue-pdf';
 export default {
   data: () => ({
     currentPage: 1,
-    pageNums: 1
+    pageNums: 1,
+    publicPath: process.env.BASE_URL
   }),
   components: {
     pdf
@@ -25,6 +37,14 @@ export default {
   methods: {
     computePages(pageNums) {
       this.pageNums = pageNums;
+    },
+    changePage(type) {
+      let page = this.currentPage;
+      if (type === 'prev') page -= 1;
+      else page += 1;
+      if (page < 1) page = 1;
+      if (page > this.pageNums) page = this.pageNums;
+      this.currentPage = page;
     }
 
   }
@@ -32,13 +52,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-size: 60px;
-  color: rgb(238, 238, 238);
-  background: rgb(45, 58, 75);
+.header {
+  text-align: center;
+  margin-top: 60px;
 }
 </style>

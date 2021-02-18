@@ -1,14 +1,21 @@
-# 作品集-demo
+> React作品集 [在线链接](https://kongkong99.github.io/react-sample-reels/)
 
-## Demos
-- [2D-圆周运动](https://kongkong99.github.io/sample-reels/#/2d-round) 代码路径: src/views/2D-round
-- [3D-旋转动画](https://kongkong99.github.io/sample-reels/#/3d-rotate) 代码路径: src/views/3D-rotateDemo
-- [3D-球体词云](https://kongkong99.github.io/sample-reels/#/3d-wordCloud) 代码路径: src/views/3D-wordCloud
-- [地理坐标在线转化工具](https://kongkong99.github.io/coordinate) [仓库地址](https://github.com/kongkong99/coordinate)
-- [网站grayscale](https://kongkong99.github.io/sample-reels/#/grayscale) 代码路径: src/views/grayscale
+## Vue作品集 [在线链接](https://kongkong99.github.io/sample-reels/)
+
+- [2D-圆周运动](https://kongkong99.github.io/sample-reels/#/2d-round) 
+- [3D-旋转动画](https://kongkong99.github.io/sample-reels/#/3d-rotate) 
+- [3D-球体词云](https://kongkong99.github.io/sample-reels/#/3d-wordCloud)
+- [网站grayscale](https://kongkong99.github.io/sample-reels/#/grayscale)
 - [滑块验证码](https://kongkong99.github.io/jigsaw) [仓库地址](https://github.com/kongkong99/jigsaw)
+- [给图片添加水印](https://kongkong99.github.io/sample-reels/#/watermark)
+- [PDF在线预览](https://kongkong99.github.io/sample-reels/#/pdf)
+
+## 外链`Vue`项目
 - [Leaflet加载其他地图底图](https://kongkong99.github.io/leafletMap/#/) [仓库地址](https://github.com/kongkong99/leafletMap)
-- [给图片添加水印](https://kongkong99.github.io/sample-reels/#/watermark) 代码路径: src/views/WaterMark
+- [地理坐标在线转化工具](https://kongkong99.github.io/coordinate) [仓库地址](https://github.com/kongkong99/coordinate)
+- [富文本编辑器](https://kongkong99.github.io/vue-tinymce/) [仓库地址](https://github.com/kongkong99/vue-tinymce/)
+
+
 
 ### 特殊demo注释
 - grayscale

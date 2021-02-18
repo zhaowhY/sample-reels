@@ -3,7 +3,15 @@
     v-if="visible"
     class="menu-wrapper"
   >
-    <h1 style="color: #67C23A;margin: 16px">Vue项目</h1>
+
+    <h1 style="color: #67C23A;margin: 16px">Vue作品集</h1>
+    <h4
+      style="color: #1890ff; margin:0px 16px 8px;  cursor: pointer"
+      :onClick="() => window.open('https://kongkong99.github.io/react-sample-reels/', '_blank')"
+    >
+      React作品集连接
+    </h4>
+
     <el-button
       style="margin: 8px 16px"
       type="primary"
@@ -23,7 +31,7 @@
       </el-menu-item>
     </el-menu>
 
-    <h2 style="color: #67C23A;margin: 16px">外链项目</h2>
+    <h2 style="color: #67C23A;margin: 16px">Vue外链项目</h2>
     <el-menu @select="skipToLink">
       <el-menu-item
         :index="route.path"
