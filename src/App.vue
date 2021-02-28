@@ -26,6 +26,7 @@ export default {
   }
 
   .app-view {
+    width: 100%;
     margin: 0 auto;
   }
 }

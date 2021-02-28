@@ -33,7 +33,7 @@ export default {
 
 <style lang="less" scoped>
 .jigsaw-wrapper {
-  margin: 0 auto;
+  text-align: center;
   padding-top: 100px;
 }
 

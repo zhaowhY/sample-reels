@@ -37,6 +37,11 @@ const routes = [
     path: '/jigsaw',
     name: '滑块验证码',
     component: () => import('../views/Jigsaw/index.vue')
+  },
+  {
+    path: '/pdf',
+    name: 'PDF在线预览',
+    component: () => import('../views/PDF/index.vue')
   }
 
 ];
