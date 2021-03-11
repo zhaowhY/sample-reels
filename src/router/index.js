@@ -65,5 +65,9 @@ export const externalLinks = [
   {
     path: 'https://kongkong99.github.io/vue-tinymce/',
     name: '富文本编辑器'
+  },
+  {
+    path: 'http://39.105.108.226:7003/index.html#/',
+    name: '大文件分片上传'
   }
 ];

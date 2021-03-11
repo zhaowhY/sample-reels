@@ -14,6 +14,7 @@
 - [Leaflet加载其他地图底图](https://kongkong99.github.io/leafletMap/#/) [仓库地址](https://github.com/kongkong99/leafletMap)
 - [地理坐标在线转化工具](https://kongkong99.github.io/coordinate) [仓库地址](https://github.com/kongkong99/coordinate)
 - [富文本编辑器](https://kongkong99.github.io/vue-tinymce/) [仓库地址](https://github.com/kongkong99/vue-tinymce/)
+- [大文件分片上传](http://39.105.108.226:7003/index.html#/) [仓库地址](https://github.com/kongkong99/Large-file-uplaod)
 
 
 
