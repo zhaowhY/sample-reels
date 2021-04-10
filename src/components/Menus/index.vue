@@ -5,10 +5,7 @@
   >
 
     <h1 style="color: #67C23A;margin: 16px">Vue作品集</h1>
-    <h4
-      style="color: #1890ff; margin:0px 16px 8px;  cursor: pointer"
-      :onClick="() => window.open('https://kongkong99.github.io/react-sample-reels/', '_blank')"
-    >
+    <h4 style="color: #1890ff; margin:0px 16px 8px;  cursor: pointer" @click="openPage('https://kongkong99.github.io/react-sample-reels/')">
       React作品集连接
     </h4>
 
@@ -32,7 +29,7 @@
     </el-menu>
 
     <h2 style="color: #67C23A;margin: 16px">Vue外链项目</h2>
-    <el-menu @select="skipToLink">
+    <el-menu @select="openPage">
       <el-menu-item
         :index="route.path"
         v-for="(route,index) of externalLinks"
@@ -58,9 +55,9 @@ export default {
     selectMenu(path) {
       this.$router.push(path);
     },
-    skipToLink(path) {
+    openPage(path) {
       window.open(path, '_blank');
-    }
+    },
   }
 };
 </script>

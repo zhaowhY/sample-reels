@@ -22,11 +22,11 @@ export default {
   display: flex;
 
   .app-menus {
-    width: 220px;
+    flex: 0 0 220px;
   }
 
   .app-view {
-    width: 100%;
+    flex: 1;
     margin: 0 auto;
   }
 }

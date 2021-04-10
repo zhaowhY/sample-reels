@@ -1,7 +1,7 @@
 <template>
   <div class="jigsaw-wrapper">
     <div id="container"></div>
-    <div class="jigsaw-message">{{message}}</div>
+    <div class="jigsaw-message">更多使用方式参考  <a href="https://www.npmjs.com/package/jigsaw-captcha-js" target="_blank">npm连接</a>  </div>
   </div>
 </template>
 
@@ -12,7 +12,6 @@ export default {
   data: () => ({
     x: 0,
     y: 0,
-    message: '更多使用方式参考(https://www.npmjs.com/package/jigsaw-captcha-js)'
   }),
   mounted() {
     jigsaw.init({
